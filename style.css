@@ -1,0 +1,206 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background: #f5f7fa;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #0a3d62;
+    color: #fff;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .logo img {
+    border-radius: 50%;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #ffd32a;
+}
+
+/* Hero */
+.hero {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1e90ff, #0a3d62);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: #ffd32a;
+    color: #000;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #ffb700;
+}
+
+/* About */
+.about {
+    padding: 60px 20px;
+    text-align: center;
+    background: #fff;
+}
+
+.about h2 {
+    color: #0a3d62;
+    margin-bottom: 20px;
+}
+
+/* Services */
+.services {
+    padding: 60px 20px;
+    background: #f9fafc;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 30px;
+    color: #0a3d62;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.service-box {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+/* Portfolio */
+.portfolio {
+    padding: 60px 20px;
+    background: #fff;
+    text-align: center;
+}
+
+.portfolio h2 {
+    margin-bottom: 25px;
+    color: #0a3d62;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.portfolio-item {
+    background: #1e90ff;
+    color: #fff;
+    padding: 50px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+/* Contact */
+.contact {
+    padding: 60px 20px;
+    text-align: center;
+    background: #f9fafc;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+    color: #0a3d62;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 0 auto 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact input, 
+.contact textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.contact button {
+    background: #0a3d62;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contact button:hover {
+    background: #1e90ff;
+}
+
+/* Footer */
+footer {
+    background: #0a3d62;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
